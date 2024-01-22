@@ -1,0 +1,8 @@
+CREATE TABLE parking (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  license VARCHAR(20) NOT NULL,
+  entry_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  exit_time TIMESTAMP,
+  duration INT,
+  cost DECIMAL(10,2)
+);

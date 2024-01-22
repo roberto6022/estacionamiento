@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to our Parking Lot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to our Parking Lot</h1>
+    </header>
+
+    <section class="cta">
+        <a href="#" class="button">Reserve a Spot</a>
+        <a href="#" class="button">Make a Payment</a>
+    </section>
+
+    <section class="rates">
+        <h2>Parking Rates</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Rate</th>
+            </tr>
+            <tr>
+                <td>1 Hour</td>
+                <td>$5</td>
+            </tr>
+            <tr>
+                <td>2 Hours</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>3 Hours</td>
+                <td>$15</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="instructions">
+        <h2>Instructions</h2>
+        <ol>
+            <li>Choose to reserve a spot or make a payment</li>
+            <li>Fill out the necessary information</li>
+            <li>Click submit to complete your transaction</li>
+        </ol>
+    </section>
+
+    <section class="payment">
+        <h2>Payment</h2>
+        <form action="payment.php" method="post">
+            <label for="license">License Plate Number:</label>
+            <input type="text" id="license" name="license" required>
+
+            <label for="duration">Duration (in hours):</label>
+            <input type="number" id="duration" name="duration" min="1" max="10" required>
+
+            <label for="card">Credit Card Number:</label>
+            <input type="text" id="card" name="card" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section class="control">
+        <h2>Parking Control System</h2>
+        <p>This is our parking control system, where the attendant can input the license plate number and check the duration of the stay. Please note that this is just an example and does not actually exist in our parking lot.</p>
+        <img src="control_system.jpg" alt="Parking Control System">
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Our Parking Lot. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
